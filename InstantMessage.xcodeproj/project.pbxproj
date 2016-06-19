@@ -14,6 +14,13 @@
 		51265A761D16AEF200152731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51265A741D16AEF200152731 /* LaunchScreen.storyboard */; };
 		51265A811D16AEF200152731 /* InstantMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51265A801D16AEF200152731 /* InstantMessageTests.swift */; };
 		51265A8C1D16AEF200152731 /* InstantMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51265A8B1D16AEF200152731 /* InstantMessageUITests.swift */; };
+		51265AA01D16AF2000152731 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51265A9F1D16AF2000152731 /* IntentHandler.swift */; };
+		51265AA91D16AF2100152731 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51265AA81D16AF2100152731 /* IntentsUI.framework */; };
+		51265AAC1D16AF2100152731 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51265AAB1D16AF2100152731 /* IntentViewController.swift */; };
+		51265AAF1D16AF2100152731 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51265AAD1D16AF2100152731 /* MainInterface.storyboard */; };
+		51265AB31D16AF2100152731 /* MessageTranscriptorUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51265AA61D16AF2000152731 /* MessageTranscriptorUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51265AB61D16AF2100152731 /* MessageTranscriptor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51265A9D1D16AF2000152731 /* MessageTranscriptor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51265ABF1D16B5D200152731 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51265ABE1D16B5D200152731 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,36 @@
 			remoteGlobalIDString = 51265A671D16AEF200152731;
 			remoteInfo = InstantMessage;
 		};
+		51265AB11D16AF2100152731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51265A601D16AEF200152731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51265AA51D16AF2000152731;
+			remoteInfo = MessageTranscriptorUI;
+		};
+		51265AB41D16AF2100152731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51265A601D16AEF200152731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51265A9C1D16AF2000152731;
+			remoteInfo = MessageTranscriptor;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51265ABD1D16AF2100152731 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51265AB31D16AF2100152731 /* MessageTranscriptorUI.appex in Embed App Extensions */,
+				51265AB61D16AF2100152731 /* MessageTranscriptor.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51265A681D16AEF200152731 /* InstantMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +83,15 @@
 		51265A871D16AEF200152731 /* InstantMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51265A8B1D16AEF200152731 /* InstantMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantMessageUITests.swift; sourceTree = "<group>"; };
 		51265A8D1D16AEF200152731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51265A9D1D16AF2000152731 /* MessageTranscriptor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageTranscriptor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51265A9F1D16AF2000152731 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		51265AA11D16AF2000152731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51265AA61D16AF2000152731 /* MessageTranscriptorUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageTranscriptorUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51265AA81D16AF2100152731 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		51265AAB1D16AF2100152731 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		51265AAE1D16AF2100152731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		51265AB01D16AF2100152731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51265ABE1D16B5D200152731 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +116,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51265A9A1D16AF2000152731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51265ABF1D16B5D200152731 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51265AA31D16AF2000152731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51265AA91D16AF2100152731 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +141,9 @@
 				51265A6A1D16AEF200152731 /* InstantMessage */,
 				51265A7F1D16AEF200152731 /* InstantMessageTests */,
 				51265A8A1D16AEF200152731 /* InstantMessageUITests */,
+				51265A9E1D16AF2000152731 /* MessageTranscriptor */,
+				51265AAA1D16AF2100152731 /* MessageTranscriptorUI */,
+				51265AA71D16AF2100152731 /* Frameworks */,
 				51265A691D16AEF200152731 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +154,8 @@
 				51265A681D16AEF200152731 /* InstantMessage.app */,
 				51265A7C1D16AEF200152731 /* InstantMessageTests.xctest */,
 				51265A871D16AEF200152731 /* InstantMessageUITests.xctest */,
+				51265A9D1D16AF2000152731 /* MessageTranscriptor.appex */,
+				51265AA61D16AF2000152731 /* MessageTranscriptorUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +191,34 @@
 			path = InstantMessageUITests;
 			sourceTree = "<group>";
 		};
+		51265A9E1D16AF2000152731 /* MessageTranscriptor */ = {
+			isa = PBXGroup;
+			children = (
+				51265A9F1D16AF2000152731 /* IntentHandler.swift */,
+				51265AA11D16AF2000152731 /* Info.plist */,
+			);
+			path = MessageTranscriptor;
+			sourceTree = "<group>";
+		};
+		51265AA71D16AF2100152731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51265ABE1D16B5D200152731 /* CoreLocation.framework */,
+				51265AA81D16AF2100152731 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51265AAA1D16AF2100152731 /* MessageTranscriptorUI */ = {
+			isa = PBXGroup;
+			children = (
+				51265AAB1D16AF2100152731 /* IntentViewController.swift */,
+				51265AAD1D16AF2100152731 /* MainInterface.storyboard */,
+				51265AB01D16AF2100152731 /* Info.plist */,
+			);
+			path = MessageTranscriptorUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +229,13 @@
 				51265A641D16AEF200152731 /* Sources */,
 				51265A651D16AEF200152731 /* Frameworks */,
 				51265A661D16AEF200152731 /* Resources */,
+				51265ABD1D16AF2100152731 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51265AB21D16AF2100152731 /* PBXTargetDependency */,
+				51265AB51D16AF2100152731 /* PBXTargetDependency */,
 			);
 			name = InstantMessage;
 			productName = InstantMessage;
@@ -181,6 +278,40 @@
 			productReference = 51265A871D16AEF200152731 /* InstantMessageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		51265A9C1D16AF2000152731 /* MessageTranscriptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51265ABA1D16AF2100152731 /* Build configuration list for PBXNativeTarget "MessageTranscriptor" */;
+			buildPhases = (
+				51265A991D16AF2000152731 /* Sources */,
+				51265A9A1D16AF2000152731 /* Frameworks */,
+				51265A9B1D16AF2000152731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageTranscriptor;
+			productName = MessageTranscriptor;
+			productReference = 51265A9D1D16AF2000152731 /* MessageTranscriptor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		51265AA51D16AF2000152731 /* MessageTranscriptorUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51265AB71D16AF2100152731 /* Build configuration list for PBXNativeTarget "MessageTranscriptorUI" */;
+			buildPhases = (
+				51265AA21D16AF2000152731 /* Sources */,
+				51265AA31D16AF2000152731 /* Frameworks */,
+				51265AA41D16AF2000152731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageTranscriptorUI;
+			productName = MessageTranscriptorUI;
+			productReference = 51265AA61D16AF2000152731 /* MessageTranscriptorUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +342,18 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 51265A671D16AEF200152731;
 					};
+					51265A9C1D16AF2000152731 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2FXN42J3HV;
+						DevelopmentTeamName = "Leftshift Tech (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					51265AA51D16AF2000152731 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2FXN42J3HV;
+						DevelopmentTeamName = "Leftshift Tech (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 51265A631D16AEF200152731 /* Build configuration list for PBXProject "InstantMessage" */;
@@ -229,6 +372,8 @@
 				51265A671D16AEF200152731 /* InstantMessage */,
 				51265A7B1D16AEF200152731 /* InstantMessageTests */,
 				51265A861D16AEF200152731 /* InstantMessageUITests */,
+				51265A9C1D16AF2000152731 /* MessageTranscriptor */,
+				51265AA51D16AF2000152731 /* MessageTranscriptorUI */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +400,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51265A9B1D16AF2000152731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51265AA41D16AF2000152731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51265AAF1D16AF2100152731 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +446,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51265A991D16AF2000152731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51265AA01D16AF2000152731 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51265AA21D16AF2000152731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51265AAC1D16AF2100152731 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +474,16 @@
 			isa = PBXTargetDependency;
 			target = 51265A671D16AEF200152731 /* InstantMessage */;
 			targetProxy = 51265A881D16AEF200152731 /* PBXContainerItemProxy */;
+		};
+		51265AB21D16AF2100152731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51265AA51D16AF2000152731 /* MessageTranscriptorUI */;
+			targetProxy = 51265AB11D16AF2100152731 /* PBXContainerItemProxy */;
+		};
+		51265AB51D16AF2100152731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51265A9C1D16AF2000152731 /* MessageTranscriptor */;
+			targetProxy = 51265AB41D16AF2100152731 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -316,6 +502,14 @@
 				51265A751D16AEF200152731 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51265AAD1D16AF2100152731 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51265AAE1D16AF2100152731 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,10 +607,11 @@
 		51265A911D16AEF200152731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstantMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = leftshift.InstantMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -425,10 +620,11 @@
 		51265A921D16AEF200152731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstantMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = leftshift.InstantMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -484,6 +680,56 @@
 			};
 			name = Release;
 		};
+		51265AB81D16AF2100152731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MessageTranscriptorUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample.MessageTranscriptorUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		51265AB91D16AF2100152731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MessageTranscriptorUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample.MessageTranscriptorUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		51265ABB1D16AF2100152731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MessageTranscriptor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample.MessageTranscriptor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		51265ABC1D16AF2100152731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MessageTranscriptor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.SiriKitSample.MessageTranscriptor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,6 +749,7 @@
 				51265A921D16AEF200152731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51265A931D16AEF200152731 /* Build configuration list for PBXNativeTarget "InstantMessageTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +758,7 @@
 				51265A951D16AEF200152731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51265A961D16AEF200152731 /* Build configuration list for PBXNativeTarget "InstantMessageUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +767,25 @@
 				51265A981D16AEF200152731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51265AB71D16AF2100152731 /* Build configuration list for PBXNativeTarget "MessageTranscriptorUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51265AB81D16AF2100152731 /* Debug */,
+				51265AB91D16AF2100152731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51265ABA1D16AF2100152731 /* Build configuration list for PBXNativeTarget "MessageTranscriptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51265ABB1D16AF2100152731 /* Debug */,
+				51265ABC1D16AF2100152731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

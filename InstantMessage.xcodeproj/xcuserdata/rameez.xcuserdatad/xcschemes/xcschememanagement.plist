@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MessageTranscriptor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MessageTranscriptorUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>51265A861D16AEF200152731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51265A9C1D16AF2000152731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51265AA51D16AF2000152731</key>
 		<dict>
 			<key>primary</key>
 			<true/>
